@@ -19,8 +19,8 @@
 
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
             android:text="爱好"
             android:textSize="20sp" />
 
@@ -60,10 +60,11 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
             android:text="1 + 1 = "
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            android:id="@+id/textView" />
 
 
         <RadioGroup
@@ -94,8 +95,8 @@
         </RadioGroup>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
             android:text="2 + 2 = "
             android:textSize="20sp" />
 
@@ -128,15 +129,15 @@
 
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
             android:text="建议"
             android:textSize="20sp" />
 
         <EditText
             android:id="@+id/aihao"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:gravity="center"
             android:hint="自由发挥" />
 
@@ -153,8 +154,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
                 android:layout_margin="10sp"
                 android:text="答案"
                 android:textSize="30sp" />
