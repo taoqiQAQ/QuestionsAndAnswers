@@ -31,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // TODO Auto-generated method stub
                 if (checkedId == two.getId()) {
-                    DisplayToast("正确答案：" + two.getText() + "，恭喜你，回答正确！");
+                    displayToast("正确答案：" + two.getText() + "，恭喜你，回答正确！");
                 } else {
-                    DisplayToast("请注意，回答错误！");
+                    displayToast("请注意，回答错误！");
                 }
             }
         });
@@ -50,17 +50,16 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // TODO Auto-generated method stub
                 if (checkedId == four.getId()) {
-                    DisplayToast("正确答案：" + four.getText() + "，恭喜你，回答正确！");
+                    displayToast("正确答案：" + four.getText() + "，恭喜你，回答正确！");
                 } else {
-                    DisplayToast("请注意，回答错误！");
+                    displayToast("请注意，回答错误！");
                 }
             }
         });
     }
 
-    public void DisplayToast(String str) {
+    public void displayToast(String str) {
         Toast.makeText(this, str, Toast.LENGTH_SHORT).show();
-
     }
 
     /**
@@ -74,32 +73,21 @@ public class MainActivity extends AppCompatActivity {
         String aihao = aihaoField.getText().toString();
 
         //确定用户是否选打篮球
-        CheckBox sushiCheckBox = (CheckBox) findViewById(R.id.sushi);
+        CheckBox sushiCheckBox = (CheckBox) findViewById(R.id.cbBasketball);
         boolean hasSuShi = sushiCheckBox.isChecked();
         //确定用户是否选打游戏
-        CheckBox sucheCheckBox = (CheckBox) findViewById(R.id.suche);
+        CheckBox sucheCheckBox = (CheckBox) findViewById(R.id.cbcomputer);
         boolean hasSuChe = sucheCheckBox.isChecked();
         //确定用户是否选看书
-        CheckBox suxunCheckBox = (CheckBox) findViewById(R.id.suxun);
+        CheckBox suxunCheckBox = (CheckBox) findViewById(R.id.cbread);
         boolean hasSuXun = suxunCheckBox.isChecked();
         //确定用户是否选跑步
-        CheckBox libaiCheckBox = (CheckBox) findViewById(R.id.libai);
+        CheckBox libaiCheckBox = (CheckBox) findViewById(R.id.cbrun);
         boolean hasLiBai = libaiCheckBox.isChecked();
         String daanMessage = createOrderSummary(aihao, hasSuShi, hasSuChe, hasSuXun, hasLiBai);
         displayMessage(daanMessage);
     }
 
-
-    private int pinfen(boolean two, boolean four) {
-        if (two == true) {
-            fenshu = fenshu + 50;
-        }
-        if (four == true) {
-            fenshu = fenshu + 50;
-        }
-
-        return fenshu;
-    }
 
     //创建订单摘要
     private String createOrderSummary(String aihao, boolean addhasSuShi, boolean addhasSuChe, boolean addhasSuXun, boolean addhasLiBai) {

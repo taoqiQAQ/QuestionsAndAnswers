@@ -31,40 +31,32 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/sushi"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="打篮球"
-                android:textSize="16sp" />
+                android:id="@+id/cbBasketball"
+                style="@style/CustomCheckBoxStyle"
+                android:text="打篮球" />
 
             <CheckBox
-                android:id="@+id/suche"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="打游戏"
-                android:textSize="16sp" />
+                android:id="@+id/cbcomputer"
+                style="@style/CustomCheckBoxStyle"
+                android:text="打游戏" />
 
             <CheckBox
-                android:id="@+id/suxun"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="看书"
-                android:textSize="16sp" />
+                android:id="@+id/cbread"
+                style="@style/CustomCheckBoxStyle"
+                android:text="看书" />
 
             <CheckBox
-                android:id="@+id/libai"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="跑步"
-                android:textSize="16sp" />
+                android:id="@+id/cbrun"
+                style="@style/CustomCheckBoxStyle"
+                android:text="跑步" />
         </LinearLayout>
 
         <TextView
+            android:id="@+id/textView"
             android:layout_width="50dp"
             android:layout_height="30dp"
             android:text="1 + 1 = "
-            android:textSize="20sp"
-            android:id="@+id/textView" />
+            android:textSize="20sp" />
 
 
         <RadioGroup
@@ -83,14 +75,14 @@
                 android:id="@+id/two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
+                android:layout_marginLeft="20dp"
                 android:text="2" />
 
             <RadioButton
                 android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
+                android:layout_marginLeft="20dp"
                 android:text="3" />
         </RadioGroup>
 
@@ -116,14 +108,14 @@
                 android:id="@+id/five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
+                android:layout_marginLeft="20dp"
                 android:text="5" />
 
             <RadioButton
                 android:id="@+id/six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20sp"
+                android:layout_marginLeft="20dp"
                 android:text="6" />
         </RadioGroup>
 
@@ -156,7 +148,7 @@
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="40dp"
-                android:layout_margin="10sp"
+                android:layout_margin="10dp"
                 android:text="答案"
                 android:textSize="30sp" />
 
@@ -164,7 +156,7 @@
                 android:id="@+id/daan"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_margin="10sp"
+                android:layout_margin="10dp"
                 android:background="#7eec9d" />
 
         </LinearLayout>
